@@ -1,0 +1,439 @@
+/* ***** General / Wrappers ***** */
+body {
+  display: grid;
+  grid-template-columns: 75px 1fr 75px;
+  font-family: "karla", sans-serif;
+  font-size: 1.25em;
+  line-height: 150%;
+  color: rgba(34, 32, 34, 1.0);
+}
+
+header {
+  background: #b84a4a;
+  grid-column: 1/4;
+}
+
+/****** Nav Bar Main ******/
+nav {
+  display: grid;
+  grid-template-columns: 75px 50px 1fr 1fr 75px;
+  grid-template-rows: 60px;
+  background-color: rgba(76, 73, 71, 1.0);
+  font-weight: medium;
+}
+
+.left-nav {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  color: rgba(110, 173, 58, 1.0);
+  font-size: 1.25em;
+  padding-bottom: 50px;
+}
+
+.logo {
+  grid-column: 2/3;
+  padding-top: 5px;
+}
+
+header p {
+  font-size: 1.5em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  grid-column: 4/5;
+  grid-row: 1/2;
+  justify-self: end;
+  list-style-type: none;
+  margin: auto 40px auto 0;
+  padding: 0;
+  color: #e6ebe0;
+}
+
+nav li a {
+  display: flex;
+  color: white;
+  padding: 0 40px;
+  text-decoration: none;
+  color: rgba(110, 173, 58, 1.0);
+}
+
+nav li a:hover {
+  color: #111;
+}
+
+nav ul li.active{background: rgba(150, 39, 39, .2)}
+
+/****** Intro Section *****/
+
+h1{
+font-size: 3.125em;
+}
+
+h1, .s-title, h4{
+  color: rgba(110, 173, 58, 1.0);
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 75px 1fr 1fr 75px;
+}
+
+ .button {
+ border: 3px solid rgba(110, 173, 58, 1.0);
+ font-size: 1.125em;
+ font-weight: medium;
+ text-decoration: none;
+ color: rgba(34, 32, 34, 1.0);
+ padding: 15px;
+ border-radius: 15px;
+}
+
+.button:hover{
+ color: rgba(110, 173, 58, 1.0);
+}
+
+.mobile-pic{
+  padding-top: 20px;
+}
+
+.role{
+  padding-bottom: 40px;
+}
+
+/* Margin Wrappers create a 75px margin on either side of the page */
+.margin-wrapper-white {
+  grid-column: 1/4;
+  background: #fff;
+}
+
+.margin-wrapper-gray {
+  grid-column: 1/4;
+  background: #efedef;
+}
+
+/* left/right halfs cut the section in half and send them to the correct area */
+.left-half {
+  grid-column: 2/3;
+}
+
+.right-half {
+  grid-column: 3/4;
+}
+
+/****** Overview Section *****/
+.overview {
+  text-align: center;
+  margin: 20px 30%;
+  grid-column: 2/3;
+}
+
+/****** Challenge Section *****/
+.challenge {
+  display: grid;
+  grid-template-columns:75px 1fr 1fr 75px;
+  grid-column: 2/3;
+}
+
+.lines-pic {
+  width: 85%;
+}
+
+/****** Survey Section *****/
+.surveys {
+  display: grid;
+  grid-template-columns:75px 1fr 1fr 75px;
+  grid-column: 2/3;
+  background-image: url(images/notes.png);
+  background-size: cover;
+}
+
+.percentage-container {
+  margin: 10px 50px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.per1, .per2, .per3, .per4 {
+  padding: 20px;
+}
+
+/****** User Personas Section *****/
+.goal-frustration{
+  font-weight: bold;
+}
+
+h6{
+  font-size: 1.75em;
+  font-weight: medium;
+}
+
+.personas {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr;
+}
+
+.uP-title {
+  grid-row: 1/2;
+  grid-column: 1/5;
+  text-align: center;
+}
+
+.persona {
+  padding: 10px 75px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.goals, .frustrations {
+  text-align: left;
+}
+
+.mike, .kiah {
+  border-right: 1px solid black;
+  padding-right: 25%;
+}
+
+/****** User Flows Section *****/
+.flows {
+  grid-column: 1/4;
+  text-align: center;
+}
+
+/****** Low Fidelity Wireframes Section *****/
+.lofi {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 50px 75px 1fr 1fr;
+}
+
+.lofi h4, .lofi p {
+  grid-column: 1/3;
+  text-align: center;
+}
+
+.lofi-img{
+  margin: auto ;
+  max-width: 700px;
+}
+/****** Branding Section *****/
+
+.branding {
+  grid-column: 2/3;
+}
+
+.branding-overview {
+  text-align: center;
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.colors-description {
+  grid-column: 1/2;
+}
+
+.color-pal {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+  margin: auto;
+}
+
+.square {
+ height: 144px;
+ width: 144px;
+}
+
+.one {
+ background-color: rgba(34, 34, 34, 1.0);
+}
+
+.two {
+ background-color: rgba(246, 246, 246, 1.0);
+}
+
+.three {
+ background-color: rgba(169, 207, 181, 1.0);
+}
+
+.four {
+ background-color: rgba(255, 155, 106, 1.0);
+}
+
+/****** Hi-Fidelity Mock Ups Section *****/
+
+.hifi {
+  grid-column: 2/3;
+}
+
+.hifi h4 {
+  text-align: center;
+}
+
+.hifi p {
+  margin: auto;
+  width: 25%;
+  padding: 20px;
+}
+
+.hifi-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 25px;
+  padding-bottom:30px;
+}
+
+.hifi-imgs img:nth-child(even) {
+  justify-self: end;
+}
+
+/****** Conclusion Section *****/
+.conclusion {
+  grid-column: 2/3;
+}
+
+.conclusion h4, .prototype {
+  text-align: center;
+}
+
+.conclusion-p {
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+/****** Footer Section *****/
+.copyright{
+  font-size: 0.750em;
+}
+
+footer {
+  grid-column: 1/4;
+  text-align: center;
+  background-color: rgba(52, 50, 45, 1.0);
+}
+
+.footer-links li, .footer-nav {
+  list-style: none;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin: 15px;
+}
+
+.footer-links {
+  height: 35px;
+  width: 35px;
+  margin: auto;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav li a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: rgba(110, 173, 58, 1.0);
+}
+
+.footer-nav li a:hover {
+  color: rgba(239, 237, 239, 1.0);
+}
+
+.footer-review, .footer-header, .copyright{
+  color: rgba(239, 237, 239, 1.0);
+}
+
+@media screen and (max-width: 64rem) {
+  body {
+    display: block;
+  }
+
+  .left-nav {
+    display: none;
+  }
+
+  nav {
+  grid-template-columns: 30px 50px 1fr 30px;
+  }
+
+  .intro, .challenge, .surveys, .overview,
+  .personas, .flows, .lofi, .branding, .hifi,
+  .conclusion, .colors {
+    display: block;
+  }
+
+  .overview {
+    margin: 10px auto;
+  }
+
+  .lines-pic {
+    display: none;
+  }
+  .surveys {
+     background-size: contain;
+  }
+
+  .mike, .kiah {
+  border-right: 0;
+  border-bottom: 1px solid black;
+  }
+
+  .flows img {
+    width: 100%;
+  }
+
+  .lofi-img img {
+    width: 100%;
+  }
+
+  .lofi-img {
+    width: 100%
+  }
+
+  .branding-overview img {
+    width: 100%;
+  }
+
+  .hifi-imgs {
+    display: block;
+  }
+
+  .hifi-imgs img{
+    width: 100%;
+  }
+
+
+  .hifi p {
+    width: 80%;
+  }
+
+  .color-pal {
+    justify-items: center;
+    align-items: center;
+  }
+
+  .conclusion-p {
+    width: 80%;
+  }
+}
