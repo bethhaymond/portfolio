@@ -2,9 +2,10 @@
 
 .container {
   display: grid;
-    font-family: "karla", sans-serif;
+  font-family: "rubik", sans-serif;
   font-size: 1.25em;
   grid-gap: 20px;
+  line-height: 130%;
   grid-template-columns: 1fr 10fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
@@ -19,55 +20,174 @@ header {
   grid-area: nav;
 }
 
-.navbar {
-  background-color: pink;
+nav {
+  display: grid;
+  background-color: #34322D;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 10px;
+  
 }
+
+.logo, .left-nav {
+justify-self: start;
+
+}
+
+.left-nav {
+  display: inline-flex;
+  grid-column: 2 / 2;
+}
+
+.logo {
+  padding-top: 5px;
+  grid-column: 2 / 2;
+}
+
+.left-nav, .nav-link, span {
+color: rgba(110, 173, 58, 1.0);
+}
+
+.nav-link {
+  justify-self: end;
+  align-self: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  color: #EFEDEF;
+}
+
+.about {
+  grid-column: 6 / 6;
+}
+
 
 /****   BIO     ****/
 
 .bio {
+  display: grid;
   grid-area: content;
   background-color: yellow;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(2, 2fr);
+  grid-gap: 10px;
+}
+
+.my-name {
+  font-size: 3.125em;
+  font-weight: bold;
+  grid-column: 2 / span 5;
+  margin: auto;
+}
+
+.slogan {
+  font-size: 1.563em;
+  grid-column: 2 / span 5;
 }
 
 /****   WRITINGCLOUD PROJECT     ****/
 
 .wcproject {
   grid-area: content;
-  background-color: green;
+  justify-items: center;
+  background-color:#A9CFB5;
 }
 
+h2 {
+  font-size: 2.25em;
+  font-weight: bold;
+}
+
+.uxdesign {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.button {
+  border: 3px solid rgba(34, 32, 34, 1.0);
+  font-size: 1.125em;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(34, 32, 34, 1.0);
+  padding: 15px;
+  border-radius: 15px;
+ }
+
+ .button:hover{
+  color: rgba(34, 32, 34, 1.0);
+  border: 2px solid rgba(110, 173, 58, 1.0);;
+  background-color: rgba(110, 173, 58, 1.0);;
+ }
+
 /****   FOOTER      ****/
+
+.copyright {
+  font-size: 0.60em;
+}
+
+.fa {
+  font-size: 35px;
+  color: lightgray;
+}
 
 footer {
   display: grid;
   grid-area: footer;
   background-color: #34322D;
- 
+  justify-items: center;
+  
 }
 
 .footer-inner {
-  background-color: white;
-  grid-area: footer;
+  display: grid;
+  justify-items: center;
+  color: #EFEDEF;
+  /*grid-area: footer;*/
 }
 
 .footer-header {
   font-weight: bold;
   font-size: 2.813em;
+  padding-top: 25px;
 }
 
-
-/*.footer-inner, .footer-social {
-  display:flex;*/
+.footer-nav, .footer-links {
+  display: flex;
+  justify-content: center;
 }
 
-.footer-header, .footer-inner, .footer-social {
-  color: #EFEDEF;
+.footer-links li {
+  margin: 15px;
 }
 
-.copyright {
-  font-size: 0.60em;
+.footer-links {
+  height: 35px;
+  width: 35px;
+  margin: auto;
 }
+
+.footer-review {
+  max-width: 330px;
+}
+
+/* Second Navigation in Footer */
+
+.footer-nav {
+  margin: auto;
+}
+
+.footer-nav li a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: rgba(110, 173, 58, 1.0);
+}
+
+.footer-nav li a:hover {
+  color: rgba(239, 237, 239, 1.0);
+
+}
+
 
 /****   MEDIA QUERIES    ****/
 
@@ -75,3 +195,4 @@ footer {
   body {
     display: block;
   }
+}
