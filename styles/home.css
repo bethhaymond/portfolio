@@ -42,7 +42,7 @@ nav {
   margin-right: 10px;
 }
 
-.left-nav, .nav-link, .green, .percentage {
+.left-nav, .nav-link, .green, .percentage, .slogan a {
 color: rgba(110, 173, 58, 1.0);
 }
 
@@ -86,7 +86,7 @@ footer {
   display: grid;
   justify-items: center;
   color: #EFEDEF;
-  grid-template-columns: minmax(330px, 680px);
+  grid-template-columns: minmax(320px, 680px);
   
 }
 
@@ -139,7 +139,7 @@ footer {
   display: grid;
   grid-area: content;
   grid-template-columns: repeat(9, 1fr);
-  margin: 3% 0 3% 0;
+  margin: 70px 0;
 }
 
 .my-name {
@@ -182,6 +182,7 @@ footer {
 }
 
 .description {
+  min-width: 320px;
   width: 60%;
   padding-bottom: 40px;
 }
@@ -219,6 +220,31 @@ h2 {
 
 /**********   HOME PAGE END  **********/
 
+/**********   ABOUT PAGE  **********/
+
+.biography {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.biography-text  {
+  grid-column: 2 / span 4;
+  line-height: 130%;
+  margin-right: 20px;
+}
+
+.biography p {
+  margin-bottom: 20px;
+}
+
+.biography img {
+  grid-column: 6 / span 3;
+  align-self: center;
+}
+
+
+/**********   ABOUT PAGE END  **********/
+
 /**********   WRITINGCLOUD CASE    **********/
 
 .intro h1, h4 {
@@ -244,7 +270,6 @@ h4 {
 /****   INTRO     ****/
 
 .left-details {
-
 grid-column: 2 / span 3; 
 
 }
@@ -277,7 +302,11 @@ grid-column: 2 / span 3;
   text-decoration: underline;
 }
 
-.role li {
+.ltools {
+  margin-bottom: 50px;
+}
+
+.lrole {
   margin-bottom: 20px;
 }
 
@@ -290,6 +319,7 @@ grid-column: 2 / span 3;
   line-height: 130%;
   padding: 30px 0;
   justify-items: center;
+  
 }
 
 /*.author {
@@ -307,7 +337,7 @@ grid-column: 2 / span 3;
 
 .overview p {
   text-align: center;
-  width: 50%;
+  width: 680px;
 
 }
 
@@ -458,6 +488,10 @@ grid-column: 2 / span 3;
   text-align: center;
 }
 
+.lofi h4 {
+  margin-bottom: 20px;
+}
+
 .left-lofi {
   justify-self: end;
 }
@@ -473,15 +507,25 @@ grid-column: 2 / span 3;
   line-height: 130%;
 }
 
+.branding p {
+  min-width: 320px;
+  width: 80%;
+}
+
+.branding h4, .branding-overview p {
+  margin-bottom: 20px;
+}
+
 .branding-overview {
   text-align: center;
 }
 
 .color-description {
   display: grid;
-  width: 80%;
-  justify-content: start;
+}
 
+.color-description p {
+  justify-self: end;
 }
 
 .colors {
@@ -494,6 +538,10 @@ grid-column: 2 / span 3;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
   margin: auto;
+}
+
+.branding-overview p{
+  justify-self: center;
 }
 
 .square {
@@ -569,30 +617,73 @@ grid-column: 2 / span 3;
 
 /****   MEDIA QUERIES    ****/
 
-@media screen and (max-width: 64rem) {
-  body {
-    display: block;
-  }
-
-  .left-nav {
-    display: none;
-  }
-
+@media screen and (max-width: 600px) {
+ 
   .intro, .challenge, .surveys, .overview,
   .personas, .flows, .lofi, .branding, .hifi,
-  .conclusion, .colors {
+  .conclusion, .colors, .bio, .wcproject, .biography, .right-mb {
     display: block;
+  }
+
+
+  .navname {
+    display: none;
+  }
+  
+
+  .nav-link {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+
+
+  .mb {
+    margin-top: 40px;
+   }
+
+  .my-name, .footer-header {
+    font-size: 1.75em;
+  }
+
+  .slogan, .invision {
+    font-size: 1em;
+  }
+
+  .my-name, .slogan, .bio, .biography, .intro {
+  padding: 10px;
+  }
+
+  .wcproject {
+    vertical-align: middle;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .biography img {
+    width: 100%;
   }
 
   .overview {
     margin: 10px auto;
   }
 
+  .overview p {
+    width: 320px;
+  
+  }
+
+  .conclusion-p, .left-users, .left-half {
+    margin: auto;
+    padding: 20px;
+
+}
+
   .lines-pic {
     display: none;
   }
   .surveys {
-     background-size: contain;
+    background-size: contain;
   }
 
   .mike, .kiah {
@@ -624,7 +715,6 @@ grid-column: 2 / span 3;
     width: 100%;
   }
 
-
   .hifi p {
     width: 80%;
   }
@@ -636,5 +726,9 @@ grid-column: 2 / span 3;
 
   .conclusion-p {
     width: 80%;
+  }
+
+  .footer-nav a {
+    font-size: 16px;
   }
 }
