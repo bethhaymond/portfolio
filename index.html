@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134197466-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+    
+            gtag('config', 'UA-134197466-1');
+        </script>
     <title>Portfolio | Beth Haymond</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -10,14 +19,17 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/home.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
    <!--<div class="container">-->
 
     <header>
         <nav>
-          <ul class="sidebar"><li class="left-nav logo "><a  href=""><img src="images/logo.png"></a></li>
-          <li class="left-nav">BETH HAYMOND</li></ul>
+          <ul class="sidebar">
+          <li class="left-nav logo"><a  href=""><img src="images/logo.png"></a></li>
+          <li class="left-nav navname">BETH HAYMOND</li></ul> 
             <a class= "nav-link about" href="">ABOUT</a>
             <a class= "nav-link resume"href="">RESUME</a>
             <a class= "nav-link work"href="">WORK</a>
@@ -25,8 +37,7 @@
         
        <div class="bio">
          <h1 class="my-name">Hi! My name is <span class="green">Beth</span>. I'm a UX/UI Designer living between Baltimore and DC.</h1>
-         <h3 class="slogan">Currently employed as a digital marketer working on our website development team. Take a look at my work below or feel free to drop me a line at <a href="mailto:{haymondbeth@gmail.com}"></a>haymondbeth@gmail.com.</h4>
-         <!--<i class="fa home fa-angle-down" aria-hidden="true"></i>--> <!--DOWN ARROW-->
+         <h3 class="slogan">Currently employed as a digital marketer working on our website development team. Take a look at my work below or feel free to drop me a line at <a href="mailto:{haymondbeth@gmail.com}">haymondbeth@gmail.com.</a></h3>
        </div>  <!--bio-->
     </header>
 
@@ -58,6 +69,5 @@
      <p class="copyright">&copy;2019 Designed by Beth Haymond</p>
      </div><!----> <!-- footer-inner -->
     </footer> 
-   <!--</div>--> <!-- container -->
   </body>
 </html>
