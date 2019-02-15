@@ -2,16 +2,7 @@
 <html>
 
 <head>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134197466-1"></script>
-      <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-  
-          gtag('config', 'UA-134197466-1');
-      </script>
-    <title>Portfolio | Beth Haymond WritingCloud Protoype Case Study</title>
+    <title>WritingCloud | Beth Haymond WritingCloud Protoype Case Study</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -22,6 +13,15 @@
     <link rel="stylesheet" href="styles/home.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134197466-1"></script>
+          <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+      
+              gtag('config', 'UA-134197466-1');
+          </script>
     
 </head>
 
@@ -30,9 +30,9 @@
     <nav>
       <ul class="sidebar">
       <li class="left-nav logo "><a  href=""><img src="images/logo.png"></a></li>
-      <li class="left-nav navname" href="assets/resume.pdf">BETH HAYMOND</li></ul>
+      <li class="left-nav navname" href="index.html">BETH HAYMOND</li></ul>
         <a class= "nav-link about" href="about.html">ABOUT</a>
-        <a class= "nav-link resume"href="resume.html">RESUME</a>
+        <a class= "nav-link resume"href="assets/resume.pdf">RESUME</a>
         <a class= "nav-link work"href="index.html">WORK</a>
     </nav> 
   </header>
@@ -40,7 +40,7 @@
   <main> 
     <section class="intro">
       <div class="left-details"> 
-        <h1>WritingCloud</h1>
+        <h1 class="solo-title">WritingCloud</h1>
         <p class="wcdesc">WritingCloud makes it easy for writers to automatically back up their writing and research.</p>
         <ul class="role">
           <li class="lrole"><span class="under">Role:</span> UX Design, Visual Design, Brand Identity</li>
@@ -88,7 +88,7 @@
       </div>
 
       <div class="right-half">
-        <img class="lines-pic" src="images/lines.png">
+        <img class="lines-pic" src="images/lines.svg">
       </div>
     </section><!-- challenge -->
   
@@ -131,12 +131,12 @@
       <div class="mike persona">
         <img src="images/mike.png">
         <h6 class="subtitle">Mike S.</h6>
-        <p>Graduate Student / 35 / UK</p>
+        <p class="aspire">Graduate Student / 35 / UK</p>
         <p class="goal-frustration">GOALS</p>
         <ul class="goals">
           <li>Having a word processor that automatically saves his work to a cloud as he goes.</li>
           <li>Wants one place where he can access associated research with an assignment.</li>
-          <li>Would like to move notes online.</li>
+          <li>Access across devices.</li>
         </ul> <!-- goals -->
         <p class="goal-frustration">FRUSTRATIONS</p>
         <p class="frustrations">He would like more collaborative features, like chat, editing marks, or a comments in a word processing feature.
@@ -148,7 +148,7 @@
       <div class="kiah persona">
         <img src="images/kiah.png">
         <h6 class="subtitle">Kiah M.</h6>
-        <p>Aspiring Writer / 28 / Idaho</p>
+        <p class="aspire">Aspiring Writer / 28 / Idaho</p>
         <p class="goal-frustration">GOALS</p>
         <ul class="goals">
           <li>One place for research, notes, file folders and stories.</li>
@@ -163,8 +163,8 @@
       <!-- LINE -->
       <div class="crystal persona">
         <img src="images/crystal.png">
-        <h6 class="subtitle">Crystal C.</h6>
-        <p>Self-Published Writer / 32 / Canada</p>
+        <h6 class="subtitle">Elle C.</h6>
+        <p class="aspire">Self-Published Author / 32 / Utah</p>
         <p class="goal-frustration">GOALS</p>
         <ul class="goals">
           <li>Real time collaboration with her editors which would include chat, editor's marks, and comments. Also knowing
@@ -182,11 +182,11 @@
     <p>After mapping out the <a href="https://docs.google.com/spreadsheets/d/1D4hV0upO4-dZrhDEqLqbi-zQUnh-i7MnRjFkMsZvU8o/edit?usp=sharing">user
         stories</a>, I converted the high priority stories into user flows.</p>
     <h6 class="subtitle">Sign Up</h6>
-    <img class="uflow" src="images/sign-up-flow.png">
+    <img class="uflow" src="images/sign-up-flow.svg">
     <h6 class="subtitle">Collaboration</h6>
-    <img class="uflow" src="images/collaboration-flow.png">
+    <img class="uflow" src="images/collaboration-flow.svg">
     <h6 class="subtitle">Save a Web Link</h6>
-    <img class="uflow" src="images/web-link-flow.png">
+    <img class="uflow" src="images/web-link-flow.svg">
 
   </section> <!-- flows -->
 
@@ -196,14 +196,16 @@
       user flows. Sketching potential layouts allowed for my ideas to come together and to analyze potential weak
       points quickly.</p>
 
-    <img class="lofi-img left-lofi" src="images/first-sketch.png">
+    <div class="grouplofi">
+      <img class="lofi-img left-lofi" src="images/first-sketch.png">
     <!--<p>The first version of the dashboard sketched out. After reviewing it, I decided to simplify.</p>-->
 
-    <img class="lofi-img" src="images/second-sketch.png">
+      <img class="lofi-img" src="images/second-sketch.png">
     <!--<p>This second version simplified even further to address my previous discovery of my audience's need for fluid organization based on preference.</p>-->
 
-    <img class="lofi-img left-lofi" src="images/pricing.png" alt="">
-    <img class="lofi-img" src="images/sign up.png" alt="">
+      <img class="lofi-img left-lofi" src="images/pricing.png" alt="">
+      <img class="lofi-img" src="images/sign up.png" alt="">
+    </div>   <!-- group lofi -->
 
   </section> <!-- lofi -->
 
@@ -214,13 +216,13 @@
         someone else in the industry, she pointed out that books could represent school or education. This pushed me
         towards writing tools like a feather or pen, so I made two logo variations one featuring a quill and the other a
         pen.</p>
-      <img src="images/first-pen.png" />
-      <img src="images/feather.png" />
+      <img class="first-logo" src="images/first-pen.png" />
+      <img class="first-logo" src="images/feather.png" />
       <p>The preference test yielded 60% in favor of the pen over the minimalist feather mark. Once I decided on the pen,
         I re-designed the logo a few times. My aim was to communicate the message of WritingCloud with the mark. The
         share logo is universally recognized so including this in the pen itself communicated the different ways
         WritingCloud could be used.</p>
-      <img src="images/writingcloud-sized.png">
+      <img class="first-logo" src="images/writingcloud-sized.png">
     </div>
 
     <div class="colors">
@@ -231,7 +233,7 @@
         reading deeply.</p>
       <p>Roboto's versatility made it the ideal body font. As needed I could italicize or bold at various levels to
         highlight certain information within the text.</p>
-      <p>Colors were kept soft. I pulled the Orange for its association with creativity and is used on all action items
+      <p>Colors were kept soft. I pulled the orange for its association with creativity and is used on all action items
         and buttons. Teal pairs nicely with the orange and is used as a background color.</p>
       </div>
 
@@ -263,7 +265,7 @@
 
   <section class="conclusion">
     <h4>Conclusion</h4>
-    <p class="prototype"><a href="https://projects.invisionapp.com/share/JHPEIQAQK8M">View Clickable Prototype</a></p>
+    <!--<p class="prototype"><a class="button-small" href="https://projects.invisionapp.com/share/JHPEIQAQK8M">VIEW INVISION PROTOTYPE</a></p>-->
     <p class="conclusion-p"><span>What I Learned:</span> Making assumptions about your audience will bog down your project and lead you in the wrong
       direction. Interacting with users as much as possible and getting feedback as early as possible will keep you on
       the right course. Here is what I would do if I could do this project again:</p>

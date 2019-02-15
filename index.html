@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134197466-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-    
-            gtag('config', 'UA-134197466-1');
-        </script>
     <title>Portfolio | Beth Haymond</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -21,6 +12,15 @@
     <link rel="stylesheet" href="styles/home.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134197466-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+        
+                gtag('config', 'UA-134197466-1');
+            </script>
   </head>
   <body>
    <!--<div class="container">-->
@@ -28,7 +28,7 @@
     <header>
         <nav>
             <ul class="sidebar">
-            <li class="left-nav logo "><a  href=""><img src="images/logo.png"></a></li>
+            <li class="left-nav logo"><a  href=""><img src="images/logo.png"></a></li>
             <li class="left-nav navname" href="index.html">BETH HAYMOND</li></ul>
               <a class= "nav-link about" href="about.html">ABOUT</a>
               <a class= "nav-link resume"href="assets/resume.pdf">RESUME</a>
@@ -41,14 +41,16 @@
        </div>  <!--bio-->
     </header>
 
-      <section class="wcproject"><!-- WritingCloud -->
+      <section class="wcproject-wrapper"><!-- WritingCloud -->
+       <div class="wcproject">
         <img class="cslogo" src="images/pen.png">
         <div class="details">
-          <h2>WritingCloud</h2>
-            <h3 class="uxdesign">UX Design, Branding, Visual Design</h3>
+         <h3 class="uxdesign">UX Design, Branding, Visual Design</h3>
+          <h2>WritingCloud</h2>            
               <p class="description">Cloud storage prototype for professional and aspiring writers, editors, and students.</p>
               <a class="button case" href="project.html">VIEW CASE STUDY</a>
         </div>  <!-- Details -->    
+       </div>  <!-- wcproject -->
       </section>
 
     <footer>
