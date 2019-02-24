@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: auto auto;
   margin: auto;
-  padding: 8rem 0;
+  padding: 8rem 0 5rem;
 }
 
 p {
@@ -102,7 +102,7 @@ a:hover {
 
 .copyright {
   font-size: 0.60em;
-  padding-bottom: 20px;
+  padding: 2.5rem 0;
 }
 
 .fa {
@@ -128,15 +128,15 @@ footer {
 .footer-header {
   font-weight: "700";
   font-size: 2.813em;
-  padding-top: 40px;
+  padding-top: 2rem;
 }
 
-.footer-nav, .footer-links {
+.footer-links {
   display: flex;
 }
 
 .footer-links li {
-  margin-right: 15px;
+  padding: 0 0.5rem;
 }
 
 .footer-review{
@@ -144,31 +144,20 @@ footer {
   line-height: 120%;
 }
 
-.footer-review, .footer-nav {
-  padding: 40px 0;
+.footer-review {
+  padding: 2.5rem 0;
 }
 
-
-/* Second Navigation in Footer */
-
-.footer-nav {
-  margin: auto;
-}
-
-.footer-nav li a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: rgba(110, 173, 58, 1.0);
-}
-
-.footer-nav li a:hover {
-  color: rgba(239, 237, 239, 1.0);
-
-}
 
 /**********   HOME PAGE    **********/
 
 /****   BIO     ****/
+
+.bio {
+  animation-duration: 1s;
+  animation-delay: 1s;
+ 
+}
 
 .my-name {
   font-size: 2.75em;
@@ -194,7 +183,7 @@ footer {
   background-color:#A9CFB5;
 }
 
-.wcproject {
+#wcproject {
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: minmax(auto, 50rem);
@@ -215,7 +204,7 @@ h2 {
   font-weight: bold;
 }
 
-.wcproject h2 {
+#wcproject h2 {
   color: rgba(63, 104, 74, 1.0);
 }
 
@@ -493,6 +482,7 @@ padding-bottom: 1rem;
 
 .uflow {
   max-width: 100%;
+  justify-self: center;
 }
 
 .flows h6 {
@@ -568,12 +558,23 @@ padding-bottom: 1rem;
 }
 
 .square {
+ display: grid;
  height: 144px;
  width: 144px;
 }
 
+.square p {
+  justify-self: center;
+  align-self: center;
+  padding: 0;
+}
+
 .one {
  background-color: rgba(34, 34, 34, 1.0);
+}
+
+.one p {
+  color: rgba(246, 246, 246, 1.0);
 }
 
 .two {
@@ -654,7 +655,7 @@ padding-bottom: 1rem;
  
   .intro, .challenge, .surveys, .overview,
   .personas, .flows, .lofi, .branding, .hifi,
-  .conclusion, .colors, .wcproject, .biography, 
+  .conclusion, .colors, #wcproject, .biography, 
   .right-mb, .grouplofi, .color-description, .hifi-imgs {
 
     display: block;
@@ -704,7 +705,7 @@ padding-bottom: 1rem;
     font-size: 1em;
   }
 
-  .wcproject {
+  #wcproject {
     vertical-align: middle;
     text-align: center;
     padding: 50px 0;
