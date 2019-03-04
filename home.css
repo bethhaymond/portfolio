@@ -1,0 +1,777 @@
+
+body {
+  font-family: "karla", sans-serif;
+  color: rgb(32, 34, 32, 1.0);
+  font-size: 1.25em;
+
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "rubik", sans-serif;
+}
+
+.bio, .biography, .intro {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: auto auto;
+  margin: auto;
+  padding: 8rem 0 5rem;
+}
+
+p {
+  line-height: 130%;
+}
+
+.project-wrapper p {
+   max-width: 31.25rem;
+   padding-bottom: 1.875rem;
+}
+
+.left-half p, .left-users p {
+margin: 0 0 1.25rem, 0;
+}
+
+.project-wrapper h4 {
+  padding-bottom: 1.875rem;
+}
+
+.project-wrapper section {
+  padding: 6.25rem 1.25rem;
+}
+
+.branding p, .hifi p, {
+  justify-self: center;
+}
+
+/****   NAVIGATION      ****/
+
+nav {
+  display: grid;
+  background-color: #34322D;
+  grid-template-columns: repeat(9, 1fr);
+  box-shadow: 0 0.125rem 80.5rem rgba(0,0,0,.1);
+  font-family: "karla", sans-serif;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 99;
+  padding: 0.625rem 0 0.625rem 0;
+  
+}
+
+.sidebar {
+  display: flex;
+  grid-column: 2 / 4;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 0.625rem;
+}
+
+.logo img {
+  max-height: 3.125rem;
+}
+
+.left-nav, .nav-link, .green, .percentage, .slogan a {
+color: rgba(110, 173, 58, 1.0);
+}
+
+.nav-link {
+  justify-self: start;
+  align-self: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  color: #EFEDEF;
+}
+
+.about {
+  grid-column: 6 / 6;
+  
+}
+
+/****   FOOTER      ****/
+
+.copyright {
+  font-size: 0.60em;
+  padding: 2.5rem 0;
+}
+
+.fa {
+  font-size: 2.1875rem;
+  color: lightgray;
+}
+
+footer {
+  display: grid;
+  background-color: #34322D;
+  justify-items: center;
+  
+}
+
+.footer-inner {
+  display: grid;
+  justify-items: center;
+  color: #EFEDEF;
+  grid-template-columns: minmax(20rem, 642.5rem);
+  
+}
+
+.footer-header {
+  font-weight: "700";
+  font-size: 2.813em;
+  padding-top: 2rem;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-links li {
+  padding: 0 0.5rem;
+}
+
+.footer-review{
+  text-align: center;
+  line-height: 120%;
+}
+
+.footer-review {
+  padding: 2.5rem 0;
+}
+
+
+/**********   HOME PAGE    **********/
+
+/****   BIO     ****/
+
+.bio {
+  animation-duration: 1s;
+  animation-delay: 1s;
+ 
+}
+
+.my-name {
+  font-size: 2.75em;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  line-height: 120%;
+  
+}
+
+.slogan {
+  font-size: 1.4em;
+  color: rgba(76, 73, 71, 1.0);
+  line-height: 1.5;
+}
+
+.my-name, .slogan {
+  grid-column: 2 / span 5;
+}
+
+/****   WRITINGCLOUD PROJECT     ****/
+
+.wcproject-wrapper {
+  background-color:#A9CFB5;
+}
+
+#wcproject {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: minmax(auto, 50rem);
+  grid-gap: 30px;
+  align-items: center;
+  margin: auto;
+  
+}
+
+.description {
+  min-width: 20rem;
+  width: 40%;
+  padding: 1rem 0 2rem;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: bold;
+}
+
+#wcproject h2 {
+  color: rgba(63, 104, 74, 1.0);
+}
+
+.uxdesign {
+  padding: 2rem 0 1rem;
+  color: rgba(76, 73, 71, 1.0);
+}
+
+
+.button {
+  border: 0.25rem solid rgba(147, 108, 108, 1.0);
+  font-size: 1.125em;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(34, 32, 34, 1.0);
+  padding: 0.625rem 0.9375rem;
+  border-radius: 0.9375rem;
+  display: inline-block;
+ }
+
+ .button:hover {
+  color: rgba(34, 32, 34, 1.0);
+  border: 4px solid rgba(110, 173, 58, 1.0);
+  background-color: rgba(110, 173, 58, 1.0);
+  transition-delay: 0.1s;
+ }
+
+ .cslogo {
+   justify-self: end;
+ }
+
+
+/**********   HOME PAGE END  **********/
+
+/**********   ABOUT PAGE  **********/
+
+.biography-text  {
+  grid-column: 2 / span 4;
+  line-height: 130%;
+}
+
+.biography p {
+  margin-bottom: 20px;
+}
+
+.biography img {
+  grid-column: 7 / span 2;
+  max-width: 21.875rem;
+}
+
+i {
+  font-style: italic;
+}
+
+b {
+  font-weight: bold;
+}
+
+.biography h4 {
+line-height: 130%;
+margin: 2.5rem 0 2.5rem -2.5rem;
+
+}
+
+
+/**********   ABOUT PAGE END  **********/
+
+/**********   WRITINGCLOUD CASE    **********/
+
+.intro h1, h4 {
+  color: rgba(110, 173, 58, 1.0);
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 1.5em;
+
+}
+
+.hifi {
+  background-color: rgba(239, 237, 239, 1.0);
+}
+
+
+/****   INTRO     ****/
+
+.left-details {
+grid-column: 2 / span 3; 
+}
+
+.intro h1 {
+padding-bottom: 1rem;  
+}
+
+.right-mb {
+  grid-column: 6 / span 2;
+  display: flex;
+  margin: auto;
+}
+
+.mb {
+  padding-right: 1.5rem;
+}
+
+.wcdesc {
+  font-size: 1.4em;
+  color: rgba(76, 73, 71, 1.0);
+  line-height: 120%;
+  padding-bottom: 1rem;
+
+}
+
+.under {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.ltools {
+  margin-bottom: 3.125rem;
+
+}
+
+.lrole {
+  margin-bottom: 1.25rem;
+  line-height: 120%;
+}
+
+/****   OVERVIEW    ****/
+
+.overview {
+  display: grid;
+  background-color: rgba(239, 237, 239, 1.0);
+  padding: 30px 0;
+  justify-items: center;
+  
+}
+
+.overview img {
+  margin-bottom: 0.9375rem;
+}
+
+.wcw {
+  font-style: italic;
+}
+
+/****** CHALLENGE SECTION *****/
+
+.challenge {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  margin: 4.375rem 0;
+}
+
+.left-half {
+
+  grid-column: 2 / span 4;
+  line-height: 130%;
+
+}
+
+.right-half {
+  grid-column: 6 / span 3;
+  align-self: center;
+
+}
+
+.pcloud {
+  margin-bottom: 0.625rem;
+}
+
+/****   SURVEYS SECTION    ****/
+
+.surveys {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 0.9375rem;
+
+}
+
+.left-users {
+  grid-column: 2 / span 4;
+  line-height: 130%;
+}
+
+.per1 p, .per2 p {
+  line-height: 130%;
+}
+
+.results, .goals {
+  list-style-type: circle;
+  margin-left: 1.25rem;
+  max-width: 30rem;
+
+}
+
+.results li, .left-users p, .percentage, .per1 p, .per2 p, .goals li {
+  margin-bottom: 1.25rem;
+}
+
+
+
+.per2 {
+  grid-column: 8 / span 2;
+}
+
+.per1 {
+  grid-column: 6 / span 2;
+}
+
+
+/****   PERSONAS & COMPETITIVE ANALYSIS   ****/
+
+.aspire {
+  font-size: 1rem;
+  color: #858585;
+  margin-top: 0.3125rem;
+}
+
+.goal-frustration{
+  font-weight: bold;
+  margin: 0.9375rem 0 0 0;
+}
+
+.subtitle{
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.personas, .competitive {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 4.375rem 0;
+  line-height: 130%;
+}
+
+.persona img {
+  max-width: 256px;
+}
+
+.uP-title {
+  grid-column: 1/5;
+  text-align: center;
+}
+
+.competitive p {
+  grid-column: 1/5;
+  justify-self: center;
+}
+
+
+.persona {
+  text-align: center;
+  background-color: #EFEDEF;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+
+.goals, .frustrations {
+  text-align: left;
+}
+
+#googlepic {
+  padding: 1.80rem 0;
+}
+
+
+/****** User Flows Section *****/
+
+.flows {
+  text-align: center;
+  display: grid;
+}
+
+.flows p {
+  justify-self: center;
+}
+
+.uflow {
+  max-width: 100%;
+  justify-self: center;
+}
+
+.flows h6 {
+  padding: 2.5rem 0;
+}
+
+/****** LOW FIDELITY WIRE FRAMES *****/
+
+.lofi {
+  background-color: #EFEDEF;
+  padding: 4.375rem 0;
+  display: grid;
+
+}
+
+.grouplofi {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns:1fr 1fr;
+}
+
+.grouplofi img {
+  box-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+
+.lofi p {
+  justify-self: center;
+}
+
+.lofi h4 {
+  text-align: center;
+}
+
+.left-lofi {
+  justify-self: end;
+}
+
+/****** BRANDING *****/
+
+.branding {
+  margin: 4.375rem 0;
+}
+
+.branding-overview {
+  text-align: center;
+}
+
+.branding-overview img {
+  margin: 1.875rem 0 3.125rem 0;
+  max-width: 18.75rem;
+}
+
+.branding-overview p, .lo-fi p, .flows p {
+  text-align: left;
+}
+
+.colors, .branding-overview {
+  display: grid;
+  justify-items: center;
+}
+
+.colors img {
+  width: minmax(100% 600px);
+  justify-self: center;
+  margin: 3.125rem 0 3.125rem 0;
+}
+
+.color-pal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  margin: auto;
+}
+
+.square {
+ display: grid;
+ height: 9rem;
+ width: 9rem;
+}
+
+.square p {
+  justify-self: center;
+  align-self: center;
+  padding: 0;
+}
+
+.one {
+ background-color: rgba(34, 34, 34, 1.0);
+}
+
+.one p {
+  color: rgba(246, 246, 246, 1.0);
+}
+
+.two {
+ background-color: rgba(246, 246, 246, 1.0);
+}
+
+.three {
+ background-color: rgba(169, 207, 181, 1.0);
+}
+
+.four {
+ background-color: rgba(255, 155, 106, 1.0);
+}
+
+/****** Hi-Fidelity Mock Ups Section *****/
+
+.hifi {
+  padding: 4.375rem 0;
+  display: grid;
+}
+
+.preference {
+justify-self: center;
+max-width: 35rem;
+padding-bottom: 1.875rem;
+}
+
+.hifi p {
+  justify-self: center;
+}
+
+.hifi h4 {
+  text-align: center;
+}
+
+.hifileft {
+  justify-self: end;
+}
+
+.hifi-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2.5rem;
+  padding-bottom: 1.875rem;
+}
+
+/****** Conclusion Section *****/
+
+.conclusion {
+  display: grid;
+  justify-content: center;
+}
+
+.conclusion h4, .prototype {
+  text-align: center;
+}
+
+.conclusion span {
+  font-weight: bold;
+}
+
+
+/****   MEDIA QUERIES    ****/
+
+@media screen and (max-width: 768px) {
+ 
+  .intro, .challenge, .surveys, .overview, .competitive,
+  .personas, .flows, .lofi, .branding, .hifi,
+  .conclusion, .colors, #wcproject, .biography, 
+  .right-mb, .grouplofi, .color-description, .hifi-imgs {
+
+    display: block;
+  }
+
+  .project-wrapper section {
+
+    padding: 3rem 1.25rem;
+  }
+
+  .left-users, .left-half {
+    margin: 0;
+    padding:0;
+  }
+
+  .intro img, .invision {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .button {
+    text-align: center;
+  }
+
+  .intro img {
+    padding: 1rem 0;
+  }
+
+  p, li {
+    max-width: 310px;
+    margin: auto;
+  }
+
+  .navname, .overview img, .lines-pic  {
+    display: none;
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .biography h4 {
+    padding: 15px 25px 25px 25px;
+    margin: 0;
+  }
+
+  .biography img {
+    width: 100%;
+  }
+
+  .solo-title {
+     margin: 35px auto 15px auto;
+     text-align: center;
+   }
+
+  .wcdesc {
+    margin: auto auto 15px auto;
+  }
+
+  .mb {
+    margin-top: 40px;
+   }
+
+  .my-name, .footer-header {
+    font-size: 1.75em;
+  }
+
+  .slogan, .invision, .subtitle {
+    font-size: 1em;
+  }
+
+  #wcproject {
+    vertical-align: middle;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .biography img {
+    width: 100%;
+  }
+
+  .overview {
+    margin: 10px auto;
+  }
+
+  .overview h4 {
+    text-align: center;
+  }
+
+  .overview p, .lofi p, .hifi p, .conclusion p, .hifi p, .branding-overview p, 
+  .color-description p, {
+    margin-bottom: 15px;
+  }
+
+  .left-users, .left-half {
+    margin: auto;
+    padding: 20px;
+
+  }
+
+  .color-description p, .challenge {
+    margin: auto;
+  }
+
+  .mike, .kiah {
+  border-right: 0;
+  border-bottom: 2px solid black;
+  }
+
+  .flows img, .lofi-img img, .lofi-img, .branding-overview img, .hifi-imgs img, .colors img, .preference {
+    width: 100%;
+  }
+
+  .color-pal {
+    justify-items: center;
+    align-items: center;
+  }
+
+}
