@@ -142,6 +142,7 @@ footer {
 .footer-review{
   text-align: center;
   line-height: 120%;
+  max-width: 32.25rem;
 }
 
 .footer-review {
@@ -323,7 +324,6 @@ padding-bottom: 1rem;
 }
 
 .under {
-  text-decoration: underline;
   font-weight: bold;
 }
 
@@ -373,6 +373,7 @@ padding-bottom: 1rem;
 .right-half {
   grid-column: 6 / span 3;
   align-self: center;
+  padding-left: 1.0rem;
 
 }
 
@@ -429,14 +430,12 @@ padding-bottom: 1rem;
 }
 
 .goal-frustration{
-  font-weight: bold;
-  margin: 0.9375rem 0 0 0;
+  padding: 1.5rem 0 0.75rem;
 }
 
 .subtitle{
   font-size: 1.2em;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 .personas, .competitive {
@@ -448,7 +447,7 @@ padding-bottom: 1rem;
 }
 
 .persona img {
-  max-width: 256px;
+  max-width: 150px;
 }
 
 .uP-title {
@@ -475,6 +474,7 @@ padding-bottom: 1rem;
 
 #googlepic {
   padding: 1.80rem 0;
+  max-width: 95px;
 }
 
 
@@ -494,8 +494,12 @@ padding-bottom: 1rem;
   justify-self: center;
 }
 
-.flows h6 {
+.flows h5 {
   padding: 2.5rem 0;
+}
+
+.story {
+  padding-bottom: 1.875rem;
 }
 
 /****** LOW FIDELITY WIRE FRAMES *****/
@@ -504,7 +508,6 @@ padding-bottom: 1rem;
   background-color: #EFEDEF;
   padding: 4.375rem 0;
   display: grid;
-
 }
 
 .grouplofi {
@@ -527,6 +530,10 @@ padding-bottom: 1rem;
 
 .left-lofi {
   justify-self: end;
+}
+
+#lofipar {
+  padding-top: 2.5rem;
 }
 
 /****** BRANDING *****/
